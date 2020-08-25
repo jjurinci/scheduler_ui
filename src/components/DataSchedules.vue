@@ -111,6 +111,7 @@ import Vue from 'vue'
 import schedulesService from '@/services/schedulesService'
 import Toolbar from '@/components/DataToolbar.vue'
 export default {
+
     data(){
         return {
             schedules: [],

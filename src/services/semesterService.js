@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'https://sched-backend.herokuapp.com/'
+const url = 'http://localhost:3000/'
 
 export default {
     getSemesters(){
@@ -20,6 +20,6 @@ export default {
 
     deleteSemester(id){
         return axios.delete(url + 'semesters/' + id)
-                    .then(response => response.data)
+                    .then(response => response)
     }
 }

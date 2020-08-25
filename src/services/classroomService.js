@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'https://sched-backend.herokuapp.com/'
+const url = 'http://localhost:3000/'
 
 export default {
     getClassrooms() {
@@ -20,6 +20,6 @@ export default {
 
     deleteClassroom(id) {
         return axios.delete(url + 'classrooms/' + id)
-            .then(response => response.data)
+            .then(response => response)
     }
 }

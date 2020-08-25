@@ -1,9 +1,29 @@
 <template>
 <nav class="nav nav-pills nav-justified">
-    <router-link to="/data/professors" class="nav-item nav-link active">Professors</router-link>
-    <router-link to="/data/semesters" class="nav-item nav-link">Semesters</router-link>
-    <router-link to="/data/schedules" class="nav-item nav-link">Courses</router-link>
-    <router-link to="/data/classrooms" class="nav-item nav-link">Classrooms</router-link>
+    <router-link to="/data/faculties" 
+        :class="route == 'Faculties' ? 'nav-item nav-link active' : 'nav-item nav-link'">
+        Faculties
+    </router-link>
+    
+    <router-link to="/data/semesters"
+        :class="route == 'Semesters' ? 'nav-item nav-link active' : 'nav-item nav-link'">
+        Semesters
+    </router-link>
+    
+    <router-link to="/data/subjects"
+        :class="route == 'Subjects' ? 'nav-item nav-link active' : 'nav-item nav-link'">
+        Subjects
+    </router-link>
+    
+    <router-link to="/data/professors"
+        :class="route == 'Professors' ? 'nav-item nav-link active' : 'nav-item nav-link'">
+        Professors
+    </router-link>
+    
+    <router-link to="/data/classrooms"
+        :class="route == 'Classrooms' ? 'nav-item nav-link active' : 'nav-item nav-link'">
+        Classrooms
+    </router-link>
 </nav>
 </template>
 
@@ -11,9 +31,13 @@
 export default {
     data(){
         return {
-
+            route: 'Faculties',
         }
     },
+
+    mounted(){
+        this.route = this.$router.currentRoute.name
+    }
 }
 </script>
 

@@ -1,0 +1,105 @@
+.tui-full-calendar-dayname{
+  text-align:center;
+}
+.tui-full-calendar-dayname-name{
+  color: black !important;
+}
+.tui-full-calendar-timegrid-hour{
+  font-size:16px;
+  color: #333 !important;
+ }
+
+.tui-full-calendar-timegrid-hour span{
+  display:block !important;
+}
+
+.tui-full-calendar-timegrid-hour:first-of-type span{
+  display:none !important;
+}
+
+.tui-full-calendar-timegrid-hourmarker-time{
+  font-size:15px !important;
+}
+.tui-full-calendar-dayname-container{
+  overflow-y: unset;
+  border-left: 1px solid rgb(229, 229, 229);
+  border-right: 1px solid rgb(229, 229, 229);
+}
+.tui-full-calendar-timegrid-container{
+  overflow-y: unset;
+}
+.tui-full-calendar-timegrid-right{
+  border: 1px solid rgb(229, 229, 229);
+  border-top: unset;
+}
+
+.tui-full-calendar-timegrid-timezone{
+  //padding-top:25px;
+  //border: unset !important;
+  border-left: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  border-right: unset;
+  border-top: unset;
+}
+
+.tui-full-calendar-time-date-schedule-block-wrap{
+  margin-right:0px !important;
+}
+.tui-full-calendar-time-guide-creation{
+  width:100%;
+}
+
+.tui-full-calendar-timegrid-hourmarker-line-left,
+.tui-full-calendar-timegrid-hourmarker-time {
+  display: none !important;
+}
+
+.modal-backdrop {
+   background-color: lightgray;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#semCol li{
+  cursor: not-allowed;
+}
+
+#semCol .btn.dropdown-toggle.btn-light{
+  background-color:#e9ecef;
+}
+
+//schedules style
+.tui-full-calendar-time-schedule { //	#facee0 = pink #b8e5f8 = blue #fddebf = yellow
+  background-color: #b8e5f8  !important;
+  border-radius: 15px !important;
+  margin: 3px 1px 3px 1px;
+}
+
+.tui-full-calendar-time-schedule-content{
+  border:none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size:13px;
+  overflow:hidden;
+  font-weight: normal;
+}
+
+.tui-full-calendar-time-guide-creation{
+  border-radius:10px;
+  border: 1px solid #3E6781 !important;
+}
+.tui-full-calendar-time-guide-creation-label{
+  color: #3E6781 !important;
+}

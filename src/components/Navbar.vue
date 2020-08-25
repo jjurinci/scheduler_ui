@@ -17,21 +17,24 @@
                 <router-link to="/home" class="nav-link">Home</router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/solver" class="nav-link">Solver</router-link>
+                <router-link to="/solver/weeks" class="nav-link">Solver</router-link>
             </li>
         </ul>
     </div>
 
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li v-if="!currentUser" class="nav-item">
                 <router-link to="/login" class="nav-link">Login</router-link>
             </li>
-            <li class="nav-item">
+            <li v-if="!currentUser" class="nav-item">
                 <router-link to="/register" class="nav-link">Register</router-link>
             </li>
-            <li class="nav-item">
-                <router-link to="/profile" class="nav-link">Profile</router-link>
+            <li v-if="currentUser" class="nav-item">
+                <router-link to="/profile" class="nav-link">{{currentUser.firstName + " " + currentUser.lastName}}</router-link>
+            </li>
+            <li v-if="currentUser" class="nav-item">
+                <a @click="logout" href="" class="nav-link">Logout</a>
             </li>
         </ul>
     </div>
@@ -40,7 +43,20 @@
 
 <script>
 export default {
-    
+    data(){
+        return {
+            currentUser: null
+        }
+    },
+    methods: {
+        async logout(){
+            await localStorage.removeItem('user')
+            this.$router.push({name: 'Login'})
+        }
+    },
+    mounted(){
+        this.currentUser = JSON.parse(localStorage.getItem('user'))
+    }
 }
 </script>
 

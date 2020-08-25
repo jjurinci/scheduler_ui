@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'https://sched-backend.herokuapp.com/'
+const url = 'http://localhost:3000/'
 
 export default {
     getSchedules() {
@@ -13,8 +13,13 @@ export default {
             .then(response => response.data)
     },
 
-    updateSchedule(id, data) {
+    replaceSchedule(id, data){
         return axios.put(url + 'schedules/' + id, data)
+               .then(response => response.data)
+    },
+
+    updateSchedule(id, data) {
+        return axios.patch(url + 'schedules/' + id, data)
             .then(response => response.data)
     },
 
