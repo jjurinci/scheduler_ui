@@ -27,8 +27,8 @@ const calendarOptions = {
             return '&nbsp;&nbsp;<span class="tui-full-calendar-dayname-name" style="font-size:20px;">' + model.dayName + '</span>';
         },
         time: function (schedule) {
-            let mandatory_str = ""
-            if (schedule.body.mandatory) mandatory_str = "*"
+            let mandatory_str = "*"
+            if (schedule.body.mandatory) mandatory_str = ""
             /*return '<strong>' + moment(schedule.start._date).format('HH:mm') + '</strong> ' +
                 '- <strong>' + moment(schedule.end._date).format('HH:mm') + '</strong> <br/>' +
                 schedule.title + " " + "(" + schedule.body.type + "-" + schedule.body.group + ") " + mandatory_str + "<br/>" + 

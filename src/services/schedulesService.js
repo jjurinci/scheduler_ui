@@ -1,6 +1,7 @@
 import axios from 'axios'
+import config from './config.js'
 
-const url = 'http://localhost:3000/'
+const url = config.dmlUrl
 
 export default {
     getSchedules() {

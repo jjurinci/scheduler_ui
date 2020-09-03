@@ -7,7 +7,6 @@ import Profile from '../views/Profile.vue'
 import DataClassrooms from '../components/DataClassrooms.vue'
 import DataProfessors from '../components/DataProfessors.vue'
 import DataSemesters from '../components/DataSemesters.vue'
-import DataSchedules from '../components/DataSchedules.vue'
 import DataFaculties from '../components/DataFaculties.vue'
 import DataSubjects from '../components/DataSubjects.vue'
 import SelectSubjects from '../components/Solver/SelectSubjects.vue'
@@ -46,11 +45,6 @@ Vue.use(VueRouter)
     path: '/data/classrooms',
     name: 'Classrooms',
     component: DataClassrooms
-  },
-  {
-    path: '/data/schedules',
-    name: 'Schedules',
-    component: DataSchedules
   },
   {
     path: '/data/professors',

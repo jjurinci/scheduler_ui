@@ -1,6 +1,7 @@
 import axios from 'axios'
+import config from './config.js'
 
-const url = 'http://127.0.0.1:5000/'
+const url = config.solverUrl
 
 export default {
     getFinalTimetables(userid, solverid){
