@@ -1,19 +1,37 @@
-# schedulerui
+## Frontend
 
-## Project setup
-```
-yarn install
-```
+#### Raspored workspace
+* Dodavanje novog rasporeda
+* Odabir dodanog rasporeda (moguće odabrati i izgenerirani od gen. algoritma)
+* Pretraživanje predmeta po imenu predmeta, profesora ili semestra
+* Dodavanje predmeta u dvoranu na proizvoljni dan i sat
+* Provjera računalnosti predmeta i dvorane prije unosa u raspored
+* Provjera odabranog raspona sati sa trajanjem predmeta prije unosa u raspored
+* Ručno podešavanje predmeta na drugu dvoranu, dan ili sat + njegovo brisanje
+* Automatsko generiranje grupa predmeta
+* Filtriranje rasporeda po semestru, profesoru ili dvorani
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+#### Genetski algoritam
+* Podešavanje ograničenja (slobodno vrijeme profesora/dvorana, zimski/ljetni predmeti, itd)
+* Generiranje rasporeda
+* Vizualni prikaz ocjena međurezultata
+* Mogućnost prisilnog zaustavljanja algoritma
+* Nakon prirodnog ili prisilnog zaustavljanja vraća 5 sličnih rasporeda
+* Ručno podešavanje predmeta u izgeneriranom rasporedu
+* Spremanje izgeneriranog rasporeda
 
-### Compiles and minifies for production
-```
-yarn build
-```
+#### Unos podataka
+* Unos, uređivanje i brisanje fakulteta
+* Unos, uređivanje i brisanje semestara
+* Unos, uređivanje i brisanje profesora
+* Unos, uređivanje i brisanje predmeta
+* Unos, uređivanje i brisanje dvorana
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+[Live deployment](https://schedulerui.vercel.app)
+
+[Frontend (github)](https://github.com/jjurinci/schedulerui)
+
+[Genetski algoritam (github)](https://github.com/jjurinci/scheduler_solver)
+
+[Dokumentacija (pdf)](https://drive.google.com/file/d/1dwbhwdL9lQtF__XRucfL_uJ79NFUQR0W/view?usp=sharing)
