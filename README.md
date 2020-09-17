@@ -30,7 +30,7 @@
 
 [Live deployment](https://schedulerui.vercel.app)
 
-[Frontend (github)](https://github.com/jjurinci/schedulerui)
+[Servis za DML (github)](https://github.com/jjurinci/scheduler_dml)
 
 [Genetski algoritam (github)](https://github.com/jjurinci/scheduler_solver)
 
