@@ -33,3 +33,9 @@
 [Genetski algoritam (github)](https://github.com/jjurinci/scheduler_genetic)
 
 [Dokumentacija (pdf)](https://zir.nsk.hr/islandora/object/unipu%3A5086/datastream/PDF/view)
+
+<p align="center">
+  <img src="https://github.com/jjurinci/scheduler_ui/blob/master/public/schedulerui1.png" width="900"/>
+  <img src="https://github.com/jjurinci/scheduler_ui/blob/master/public/schedulerui2.png" width="900"/>
+  <img src="https://github.com/jjurinci/scheduler_ui/blob/master/public/schedulerui3.png" width="900"/>
+</p>
